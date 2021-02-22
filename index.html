@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/d500630b62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Desarrollador/Diseñador Cristian Peña</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Cristian Peña</h1>
+                <p>Desarrollador</p>
+            </div>
+
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="buscar">
+            </form>
+
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">MySql</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+
+            <div class="item" 
+            data-categoria="java"
+            data-etiquetas="Java Spring Hibernate"
+            data-descripcion="Proyecto en Java">
+            
+                <div class="item-contenido">
+                    <img src="imagenes/logojava.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="python"
+            data-etiquetas="Python def modulos"
+            data-descripcion="Proyecto en Python">
+            
+                <div class="item-contenido">
+                    <img src="imagenes/logopython.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="mysql"
+            data-etiquetas="datos sql"
+            data-descripcion="Proyecto en Base de datos">
+            
+                <div class="item-contenido">
+                    <img src="imagenes/logomysql.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"> <i class="fas fa-times-circle"> </i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="www.linkedin.com" target="_blanck" class="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="www.linkedin.com" target="_blanck" class="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="www.linkedin.com" target="_blanck" class="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio Diseñado por <a href="#">Cristian Alejandro</a></a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
